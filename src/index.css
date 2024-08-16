@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  /* For Chrome, Safari, Edge, and Opera */
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    @apply appearance-none;
+    margin: 0; /* Optional: removes default margin */
+  }
+
+  /* For Firefox */
+  input[type='number'] {
+    @apply appearance-none; /* This might work for some browsers */
+    -moz-appearance: textfield; /* Specifically for Firefox */
+  }
+
+ 
+} 
