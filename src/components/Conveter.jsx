@@ -22,10 +22,10 @@ function Conveter() {
   };
 
   return (
-    <div className='m-6 p-6 bg-blue-100 rounded-lg flex flex-col space-y-4 items-center shadow-lg'>
+    <div className=' sm:p-4  bg-zinc-300 bg-opacity-40 border rounded-lg flex flex-col space-y-4 items-center shadow-lg'>
             
             <CountryCard amount={IAmount} setAmount={setIAmount} currency={ICurrency} setCurrency={setICurrency} currencyInfo={data}/>
-            <button className='bg-slate-300 text-l md:text-2xl sm:text-xl px-3 py-2 font-bold rounded-md shadow-lg hover:bg-slate-400 transition-transform ' id="rotateDiv" onClick={swap}>SWAP</button>
+            <button className=' bg-gray-400 p-1.5 md:p-4 font-bold rounded-md shadow-lg transition-transform hover:bg-gray-500 ' id="rotateDiv" onClick={swap}>SWAP</button>
             <CountryCard amount={(IAmount * data[OCurrency] / data[ICurrency] ).toFixed(4)} currency={OCurrency} setCurrency={setOCurrency} currencyInfo={data}/>
 
     </div>
