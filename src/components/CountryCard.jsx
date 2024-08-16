@@ -31,7 +31,7 @@ function CountryCard({
             {
               Object.entries(currencyInfo).map(([key, value],index) => {
                 return (
-                  <option className='hover:bg-amber-900 bg-opacity-25 ' key={index} value={key}>{key.toUpperCase()}
+                  <option className=' bg-opacity-25 ' key={index} value={key}>{key.toUpperCase()}
                   </option>
                 );
               })
